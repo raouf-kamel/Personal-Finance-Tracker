@@ -3,6 +3,10 @@ package test
 
 fun main(){
 
+    //todo: test success :)
+    // check("test success", result = true, acceptedResult = true)
+     check("test fail", result = false, acceptedResult = true)
+
 //region Transactions Test Cases
 //todo: write all test cases that related with transactions here :)
     //region add transaction test cases
@@ -84,6 +88,12 @@ fun main(){
 }
 
 fun <T> check(testName: String, result: T, acceptedResult: T) {
-    if(result == acceptedResult) println("Success - $testName")
-    else println("Fail - $testName")
+    if(result == acceptedResult){
+        println("Success - $testName")
+    }
+    else {
+        println("Fail - $testName")
+        System.exit(1)  //
+    }
+
 }
