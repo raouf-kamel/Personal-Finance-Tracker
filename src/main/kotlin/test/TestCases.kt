@@ -1,0 +1,99 @@
+package test
+
+
+fun main(){
+
+    //todo: test success :)
+     check("test success", result = true, acceptedResult = true)
+    // check("test fail", result = false, acceptedResult = true)
+
+//region Transactions Test Cases
+//todo: write all test cases that related with transactions here :)
+    //region add transaction test cases
+    check(
+        testName = "when amount is less than or equal zero number should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when amount is something else number should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when id of transaction is already associated with another transaction should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when description is invalid like (numbers,special characters) should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when description is empty should return true",
+        result = true,
+        acceptedResult = true
+    )
+    check(
+        testName = "when date is invalid should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when date is empty should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when transaction type is empty should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when category type is empty should return false",
+        result = false,
+        acceptedResult = false
+    )
+    check(
+        testName = "when category is invalid like (numbers,special characters) should return false",
+        result = false,
+        acceptedResult = false
+    )
+    //endregion
+
+//endregion
+
+//region Category Test Cases
+//todo: write all test cases that related with Category here :)
+
+//endregion
+
+//region Report Test Cases
+//todo: write all test cases that related with Report here :)
+
+//endregion
+
+
+//region Monthly Summary Test Cases
+
+    check(testName = "when no transactions in month should return NoTransactions", result = false, acceptedResult = false)
+    check(testName = "when year is after now should return error", result = false, acceptedResult = false)
+    check(testName = "when month is after current month in current year should return error", result = false, acceptedResult = false)
+    check(testName = "when month number is invalid should return error", result = false, acceptedResult = false)
+    check(testName = "when year number is invalid should return error", result = false, acceptedResult = false)
+    check(testName = "when valid month with transactions should return correct summary", result = false, acceptedResult = false)
+
+//endregion
+}
+
+fun <T> check(testName: String, result: T, acceptedResult: T) {
+    if(result == acceptedResult){
+        println("Success - $testName")
+    }
+    else {
+        println("Fail - $testName")
+        System.exit(1)  //
+    }
+
+}
