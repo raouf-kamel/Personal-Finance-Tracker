@@ -4,8 +4,8 @@ package test
 fun main(){
 
     //todo: test success :)
-    // check("test success", result = true, acceptedResult = true)
-     check("test fail", result = false, acceptedResult = true)
+     check("test success", result = true, acceptedResult = true)
+    // check("test fail", result = false, acceptedResult = true)
 
 //region Transactions Test Cases
 //todo: write all test cases that related with transactions here :)
