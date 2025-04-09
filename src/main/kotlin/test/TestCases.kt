@@ -3,6 +3,12 @@ package test
 
 fun main(){
 
+    check(
+        testName = "test",
+        result = true,
+        acceptedResult = false
+    )
+
 //region Transactions Test Cases
 //todo: write all test cases that related with transactions here :)
     //region add transaction test cases
