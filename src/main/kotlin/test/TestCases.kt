@@ -93,5 +93,7 @@ fun check(testName: String, result: Boolean, acceptedResult: Boolean){
         println("Success - $testName")
     } else{
         println("Failed - $testName")
+        System.exit(1)  //
+
     }
 }
