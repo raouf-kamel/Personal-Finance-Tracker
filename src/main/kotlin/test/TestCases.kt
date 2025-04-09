@@ -5,7 +5,7 @@ fun main(){
 
     check(
         testName = "test",
-        result = true,
+        result = false,
         acceptedResult = false
     )
 
