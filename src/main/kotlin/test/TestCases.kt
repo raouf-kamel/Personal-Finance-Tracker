@@ -4,7 +4,7 @@ package test
 fun main(){
 
 
-    // check("test success", result = true, acceptedResult = true)
+      check("test success", result = true, acceptedResult = true)
 
     check("test fail", result = true, acceptedResult = false)
 
